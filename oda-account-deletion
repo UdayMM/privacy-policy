@@ -1,0 +1,93 @@
+## Account Deletion
+
+### How to Delete Your Account
+
+Patients can delete their accounts at any time through the app:
+
+1. Login to your account
+2. Tap the profile icon (👤) in the top-right corner
+3. Tap "Delete Account" in the Danger Zone
+4. Confirm deletion
+
+### What Gets Deleted Immediately
+
+When you delete your account, we permanently delete:
+
+- Your patient profile (name, age, address)
+- Mobile number and authentication credentials
+- Notification tokens and preferences
+- App preferences and saved filters
+- Your ability to login to the app
+
+### What We Retain for Legal & Healthcare Compliance
+
+**Medical Appointment Records:**
+
+Under healthcare regulations (Medical Council of India guidelines and hospital record-keeping laws), we are **legally required** to retain:
+
+- Your appointment history with doctors
+- Your name and basic information in booking records
+- Visit dates and doctor consultation details
+- Payment records for appointments
+
+**Why We Retain This Data:**
+
+1. **Legal Requirement:** Healthcare providers must maintain patient visit records for 7-10 years per medical regulations
+2. **Doctor Compliance:** Doctors need historical records of patient visits for medical-legal purposes
+3. **Hospital Compliance:** Hospitals must maintain appointment logs for regulatory audits
+
+**Your Privacy is Protected:**
+
+- You **cannot be contacted** through our app after account deletion
+- Your **profile is deleted** - you won't appear in searches
+- Booking records are **accessible only to doctors/hospitals** who treated you
+- Records **cannot be linked back** to your deleted account for marketing or other purposes
+- We **do not use** this data for any purpose except legal compliance
+
+### Data Retention Timeline
+
+| Data Type | Retention Period | Reason |
+|-----------|------------------|--------|
+| **Patient Profile** | Deleted immediately | User requested deletion |
+| **Login Credentials** | Deleted immediately | User requested deletion |
+| **FCM Tokens** | Deleted immediately | User requested deletion |
+| **Appointment Records** | 7-10 years | Healthcare legal compliance |
+
+### Re-creating Your Account
+
+If you sign up again with the same mobile number:
+
+- A **fresh account** is created
+- **No previous profile data** is restored
+- You start with a clean slate
+- Previous appointment records remain with doctors (legal requirement)
+
+### Legal Basis for Data Retention
+
+We retain appointment records under:
+
+- **Medical Council of India (MCI) Regulations**
+- **Hospital Record-Keeping Laws**
+- **Clinical Establishments Act**
+- **Contractual Necessity** (doctor-patient relationship documentation)
+
+### Your Rights
+
+Even after account deletion, you have the right to:
+
+- **Request a copy** of your appointment history (contact support)
+- **Correct inaccuracies** in medical records (contact the hospital/doctor)
+- **Object to processing** (limited - legal obligations take precedence)
+
+### Contact Us
+
+For questions about account deletion or data retention:
+
+**Email:** support@yourdomain.com  
+**Subject:** Account Deletion Inquiry  
+**Response Time:** Within 7 business days
+
+---
+
+**Last Updated:** December 2024  
+**Effective Date:** December 2024
