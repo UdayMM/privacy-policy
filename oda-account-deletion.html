@@ -1,93 +1,461 @@
-## Account Deletion
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion - Online Doctor Appointment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #6C2EB5;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section h2 {
+            color: #6C2EB5;
+            font-size: 24px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E9D7F7;
+        }
+        .section h3 {
+            color: #4A4A4A;
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+        .section p, .section li {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .steps {
+            background: #F8F5FB;
+            border-left: 4px solid #6C2EB5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .steps ol {
+            margin-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        .warning {
+            background: #FFF3CD;
+            border-left: 4px solid #FFA000;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .warning strong {
+            color: #D32F2F;
+        }
+        .info-box {
+            background: #E3F2FD;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .data-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        .data-list li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+        .data-list li:before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .contact {
+            background: #F5F5F5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .contact a {
+            color: #6C2EB5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #F5F5F5;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #E9D7F7;
+            color: #6C2EB5;
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            .content {
+                padding: 20px;
+            }
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Account Deletion</h1>
+            <p>Online Doctor Appointment App</p>
+        </div>
 
-### How to Delete Your Account
+        <div class="content">
+            <!-- Introduction -->
+            <div class="section">
+                <h2>Delete Your Account</h2>
+                <p>
+                    We respect your privacy and your right to control your personal data. 
+                    You can delete your Online Doctor Appointment account at any time using 
+                    the in-app deletion feature.
+                </p>
+            </div>
 
-Patients can delete their accounts at any time through the app:
+            <!-- Who Can Delete -->
+            <div class="section">
+                <h2>Who Can Delete Their Account?</h2>
+                <p>
+                    <strong>Patient Accounts:</strong> If you signed up as a patient using the app, 
+                    you can delete your account directly through the app.
+                </p>
+                <p>
+                    <strong>Doctor & Admin Accounts:</strong> These are business accounts created 
+                    by healthcare organizations and cannot be self-deleted. Please contact your 
+                    organization administrator for account management.
+                </p>
+            </div>
 
-1. Login to your account
-2. Tap the profile icon (👤) in the top-right corner
-3. Tap "Delete Account" in the Danger Zone
-4. Confirm deletion
+            <!-- How to Delete (In-App) -->
+            <div class="section">
+                <h2>How to Delete Your Account (Patient)</h2>
+                
+                <div class="steps">
+                    <h3>Method 1: In-App Deletion (Recommended)</h3>
+                    <ol>
+                        <li>Open the <strong>Online Doctor Appointment</strong> app</li>
+                        <li>Login to your account</li>
+                        <li>Tap the <strong>profile icon (👤)</strong> in the top-right corner of the home screen</li>
+                        <li>Scroll down to the <strong>"Danger Zone"</strong> section</li>
+                        <li>Tap <strong>"Delete Account"</strong> button</li>
+                        <li>Read the confirmation dialog carefully - it explains what will be deleted and what will be retained</li>
+                        <li>Tap <strong>"Delete"</strong> to confirm your decision</li>
+                        <li>Your account will be permanently deleted immediately</li>
+                    </ol>
+                </div>
 
-### What Gets Deleted Immediately
+                <div class="warning">
+                    <strong>⚠️ Warning:</strong> Account deletion is permanent and cannot be undone. 
+                    All your personal profile data will be permanently removed from our servers.
+                </div>
+            </div>
 
-When you delete your account, we permanently delete:
+            <!-- Alternative Method -->
+            <div class="section">
+                <h2>Alternative Deletion Method</h2>
+                <p>
+                    If you cannot access the app or need assistance with account deletion, 
+                    please contact our support team:
+                </p>
+                <div class="contact">
+                    <p><strong>Email:</strong> <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+                    <p><strong>Subject:</strong> Account Deletion Request</p>
+                    <p><strong>Include:</strong> Your registered mobile number and reason for deletion (optional)</p>
+                    <p><strong>Response Time:</strong> Within 7 business days</p>
+                </div>
+            </div>
 
-- Your patient profile (name, age, address)
-- Mobile number and authentication credentials
-- Notification tokens and preferences
-- App preferences and saved filters
-- Your ability to login to the app
+            <!-- What Gets Deleted -->
+            <div class="section">
+                <h2>What Gets Deleted Immediately</h2>
+                <p>When you delete your account, the following data is permanently removed:</p>
+                <ul class="data-list">
+                    <li>Your patient profile (name, age, address)</li>
+                    <li>Mobile number and authentication credentials</li>
+                    <li>Notification tokens (FCM tokens) and preferences</li>
+                    <li>App settings and saved preferences</li>
+                    <li>Your ability to login to the app</li>
+                    <li>Firebase Authentication account</li>
+                </ul>
+            </div>
 
-### What We Retain for Legal & Healthcare Compliance
+            <!-- Data Retention -->
+            <div class="section">
+                <h2>Data Retained for Legal & Healthcare Compliance</h2>
+                
+                <div class="info-box">
+                    <strong>📋 Important Legal Notice:</strong><br>
+                    Under healthcare regulations in India (Medical Council of India guidelines and hospital 
+                    record-keeping laws), we are <strong>legally required</strong> to retain certain medical 
+                    appointment records even after account deletion.
+                </div>
 
-**Medical Appointment Records:**
+                <h3>What Medical Records Are Retained:</h3>
+                <ul>
+                    <li>Your appointment history with doctors</li>
+                    <li>Your name and basic information in booking records</li>
+                    <li>Visit dates and doctor consultation details</li>
+                    <li>Payment records for appointments</li>
+                    <li>Hospital and clinic visit logs</li>
+                </ul>
 
-Under healthcare regulations (Medical Council of India guidelines and hospital record-keeping laws), we are **legally required** to retain:
+                <h3>Why We Retain This Data:</h3>
+                <table>
+                    <tr>
+                        <th>Legal Requirement</th>
+                        <th>Authority</th>
+                        <th>Retention Period</th>
+                    </tr>
+                    <tr>
+                        <td>Medical record-keeping</td>
+                        <td>Medical Council of India Regulations, 2002</td>
+                        <td>7-10 years</td>
+                    </tr>
+                    <tr>
+                        <td>Hospital compliance</td>
+                        <td>Clinical Establishments Act, 2010</td>
+                        <td>10 years</td>
+                    </tr>
+                    <tr>
+                        <td>Doctor's legal obligation</td>
+                        <td>MCI Professional Conduct Guidelines</td>
+                        <td>Minimum 3 years</td>
+                    </tr>
+                    <tr>
+                        <td>Service documentation</td>
+                        <td>Indian Contract Act, 1872</td>
+                        <td>3 years minimum</td>
+                    </tr>
+                </table>
 
-- Your appointment history with doctors
-- Your name and basic information in booking records
-- Visit dates and doctor consultation details
-- Payment records for appointments
+                <h3>Your Privacy is Protected:</h3>
+                <ul class="data-list">
+                    <li>You <strong>cannot be contacted</strong> through our app after account deletion</li>
+                    <li>Your <strong>profile is deleted</strong> - you won't appear in patient searches</li>
+                    <li>Booking records are <strong>accessible only to doctors/hospitals</strong> who treated you</li>
+                    <li>Records <strong>cannot be linked back</strong> to your deleted account for marketing or other purposes</li>
+                    <li>We <strong>do not use</strong> this data for any purpose except legal compliance and medical record-keeping</li>
+                    <li>Data is <strong>encrypted at rest and in transit</strong> using industry-standard security</li>
+                </ul>
+            </div>
 
-**Why We Retain This Data:**
+            <!-- Data Timeline -->
+            <div class="section">
+                <h2>Data Deletion Timeline</h2>
+                <table>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Action Taken</th>
+                        <th>Timeline</th>
+                    </tr>
+                    <tr>
+                        <td>Patient Profile</td>
+                        <td>Deleted completely</td>
+                        <td>Immediate (within seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>Login Credentials</td>
+                        <td>Deleted from Firebase Auth</td>
+                        <td>Immediate (within seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>FCM Tokens</td>
+                        <td>Deleted completely</td>
+                        <td>Immediate (within seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>App Preferences</td>
+                        <td>Deleted completely</td>
+                        <td>Immediate (within seconds)</td>
+                    </tr>
+                    <tr>
+                        <td>Appointment Records</td>
+                        <td>Retained (anonymized in profile view)</td>
+                        <td>7-10 years per healthcare laws</td>
+                    </tr>
+                </table>
+            </div>
 
-1. **Legal Requirement:** Healthcare providers must maintain patient visit records for 7-10 years per medical regulations
-2. **Doctor Compliance:** Doctors need historical records of patient visits for medical-legal purposes
-3. **Hospital Compliance:** Hospitals must maintain appointment logs for regulatory audits
+            <!-- Re-creating Account -->
+            <div class="section">
+                <h2>Re-creating Your Account</h2>
+                <p>If you sign up again with the same mobile number after deletion:</p>
+                <ul>
+                    <li>A <strong>fresh account</strong> is created with new data</li>
+                    <li><strong>No previous profile data</strong> is restored or accessible</li>
+                    <li>You start with a clean slate</li>
+                    <li>Previous appointment records remain with doctors/hospitals (legal requirement) but are not linked to your new account</li>
+                    <li>You will need to re-enter all your information (name, age, address)</li>
+                </ul>
+            </div>
 
-**Your Privacy is Protected:**
+            <!-- Consequences -->
+            <div class="section">
+                <h2>What Happens After Account Deletion?</h2>
+                <ul>
+                    <li>✅ You will be <strong>immediately logged out</strong> of the app</li>
+                    <li>✅ You <strong>cannot login</strong> with the same mobile number again (unless you sign up fresh)</li>
+                    <li>✅ All <strong>future scheduled appointments</strong> may be cancelled (contact hospital to confirm)</li>
+                    <li>✅ You will <strong>not receive</strong> any further notifications from the app</li>
+                    <li>✅ <strong>Refunds</strong> (if applicable) will be processed according to our refund policy</li>
+                    <li>✅ Your data <strong>cannot be recovered</strong> after deletion</li>
+                </ul>
+            </div>
 
-- You **cannot be contacted** through our app after account deletion
-- Your **profile is deleted** - you won't appear in searches
-- Booking records are **accessible only to doctors/hospitals** who treated you
-- Records **cannot be linked back** to your deleted account for marketing or other purposes
-- We **do not use** this data for any purpose except legal compliance
+            <!-- Before You Delete -->
+            <div class="section">
+                <h2>Before You Delete Your Account</h2>
+                <p>Please consider the following before proceeding with account deletion:</p>
+                <ul>
+                    <li>📸 <strong>Export/screenshot</strong> any appointment history you wish to keep for your personal records</li>
+                    <li>📅 <strong>Cancel</strong> any upcoming appointments with hospitals/doctors</li>
+                    <li>💰 Ensure there are <strong>no pending payments</strong> or refunds</li>
+                    <li>🔕 Consider <strong>temporarily disabling notifications</strong> instead of deleting your entire account</li>
+                    <li>📞 <strong>Contact hospitals directly</strong> if you have medical records you need access to</li>
+                </ul>
+            </div>
 
-### Data Retention Timeline
+            <!-- Legal Basis -->
+            <div class="section">
+                <h2>Legal Basis for Data Retention</h2>
+                <p>We retain appointment records under the following legal authorities:</p>
+                <ul>
+                    <li><strong>Medical Council of India (MCI) Professional Conduct Regulations, 2002</strong><br>
+                        Section 1.3.1: Requires doctors to maintain patient records for minimum 3 years (up to 10 years recommended)</li>
+                    <li><strong>Clinical Establishments (Registration and Regulation) Act, 2010</strong><br>
+                        Requires hospitals to maintain patient visit records for regulatory compliance</li>
+                    <li><strong>Indian Contract Act, 1872</strong><br>
+                        Contractual necessity to document service provision and consultation records</li>
+                    <li><strong>Information Technology Act, 2000 (as amended)</strong><br>
+                        Compliance with data protection and security requirements</li>
+                </ul>
+            </div>
 
-| Data Type | Retention Period | Reason |
-|-----------|------------------|--------|
-| **Patient Profile** | Deleted immediately | User requested deletion |
-| **Login Credentials** | Deleted immediately | User requested deletion |
-| **FCM Tokens** | Deleted immediately | User requested deletion |
-| **Appointment Records** | 7-10 years | Healthcare legal compliance |
+            <!-- Your Rights -->
+            <div class="section">
+                <h2>Your Rights</h2>
+                <p>Even after account deletion, you have the right to:</p>
+                <ul class="data-list">
+                    <li><strong>Request a copy</strong> of your retained appointment history (contact support)</li>
+                    <li><strong>Correct inaccuracies</strong> in medical records (contact the hospital/doctor directly)</li>
+                    <li><strong>Object to processing</strong> (limited - legal obligations take precedence)</li>
+                    <li><strong>Lodge a complaint</strong> with data protection authorities if you believe your rights are violated</li>
+                    <li><strong>Request explanation</strong> of why specific data is retained</li>
+                </ul>
+            </div>
 
-### Re-creating Your Account
+            <!-- Contact Support -->
+            <div class="section">
+                <h2>Need Help?</h2>
+                <p>
+                    If you have questions about account deletion, data retention, or privacy practices, 
+                    please contact us:
+                </p>
+                <div class="contact">
+                    <p><strong>General Support:</strong> <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+                    <p><strong>Privacy Inquiries:</strong> <a href="mailto:privacy@yourdomain.com">privacy@yourdomain.com</a></p>
+                    <p><strong>Data Protection Officer:</strong> <a href="mailto:dpo@yourdomain.com">dpo@yourdomain.com</a></p>
+                    <p><strong>Phone Support:</strong> +91-XXXX-XXXXXX (Mon-Fri, 9 AM - 6 PM IST)</p>
+                    <p><strong>Privacy Policy:</strong> <a href="privacy-policy.html">View our complete Privacy Policy</a></p>
+                </div>
+            </div>
 
-If you sign up again with the same mobile number:
+            <!-- Compliance Statement -->
+            <div class="section">
+                <h2>Compliance Statement</h2>
+                <div class="info-box">
+                    <p>
+                        This account deletion process complies with:
+                    </p>
+                    <ul>
+                        <li>✅ Google Play Store User Data Policy (Section 4.8)</li>
+                        <li>✅ General Data Protection Regulation (GDPR) - Right to Erasure</li>
+                        <li>✅ California Consumer Privacy Act (CCPA) - Right to Delete</li>
+                        <li>✅ Information Technology Act, 2000 (India)</li>
+                        <li>✅ Medical Council of India Regulations</li>
+                        <li>✅ Clinical Establishments Act, 2010</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-- A **fresh account** is created
-- **No previous profile data** is restored
-- You start with a clean slate
-- Previous appointment records remain with doctors (legal requirement)
-
-### Legal Basis for Data Retention
-
-We retain appointment records under:
-
-- **Medical Council of India (MCI) Regulations**
-- **Hospital Record-Keeping Laws**
-- **Clinical Establishments Act**
-- **Contractual Necessity** (doctor-patient relationship documentation)
-
-### Your Rights
-
-Even after account deletion, you have the right to:
-
-- **Request a copy** of your appointment history (contact support)
-- **Correct inaccuracies** in medical records (contact the hospital/doctor)
-- **Object to processing** (limited - legal obligations take precedence)
-
-### Contact Us
-
-For questions about account deletion or data retention:
-
-**Email:** support@yourdomain.com  
-**Subject:** Account Deletion Inquiry  
-**Response Time:** Within 7 business days
-
----
-
-**Last Updated:** December 2024  
-**Effective Date:** December 2024
+        <div class="footer">
+            <p><strong>&copy; 2024 Online Doctor Appointment.</strong> All rights reserved.</p>
+            <p>Last Updated: December 2, 2024 | Effective Date: December 2, 2024</p>
+            <p>
+                <a href="privacy-policy.html" style="color: #6C2EB5; text-decoration: none;">Privacy Policy</a> | 
+                <a href="terms-of-service.html" style="color: #6C2EB5; text-decoration: none;">Terms of Service</a> | 
+                <a href="mailto:support@yourdomain.com" style="color: #6C2EB5; text-decoration: none;">Contact Support</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
